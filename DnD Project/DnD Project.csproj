@@ -1,0 +1,286 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{9D7475E1-DA0B-486E-881B-61803FB97AD1}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>DnD_Project</RootNamespace>
+    <AssemblyName>DnD Project</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AddArmors.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AddArmors.Designer.cs">
+      <DependentUpon>AddArmors.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AddCharacter.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AddCharacter.Designer.cs">
+      <DependentUpon>AddCharacter.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AddClasses.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AddClasses.Designer.cs">
+      <DependentUpon>AddClasses.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AddRaces.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AddRaces.Designer.cs">
+      <DependentUpon>AddRaces.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AddSpells.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AddSpells.Designer.cs">
+      <DependentUpon>AddSpells.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AddWeapons.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AddWeapons.Designer.cs">
+      <DependentUpon>AddWeapons.cs</DependentUpon>
+    </Compile>
+    <Compile Include="dndDataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>dndDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="dndSusDataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>dndSusDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="EditArmors.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="EditArmors.Designer.cs">
+      <DependentUpon>EditArmors.cs</DependentUpon>
+    </Compile>
+    <Compile Include="EditCharacter.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="EditCharacter.Designer.cs">
+      <DependentUpon>EditCharacter.cs</DependentUpon>
+    </Compile>
+    <Compile Include="EditClasses.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="EditClasses.Designer.cs">
+      <DependentUpon>EditClasses.cs</DependentUpon>
+    </Compile>
+    <Compile Include="EditRaces.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="EditRaces.Designer.cs">
+      <DependentUpon>EditRaces.cs</DependentUpon>
+    </Compile>
+    <Compile Include="EditSpells.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="EditSpells.Designer.cs">
+      <DependentUpon>EditSpells.cs</DependentUpon>
+    </Compile>
+    <Compile Include="EditWeapons.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="EditWeapons.Designer.cs">
+      <DependentUpon>EditWeapons.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DiceRoll.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DiceRoll.designer.cs">
+      <DependentUpon>DiceRoll.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Main.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Main.Designer.cs">
+      <DependentUpon>Main.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="ViewArmors.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ViewArmors.Designer.cs">
+      <DependentUpon>ViewArmors.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ViewCharacter.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ViewCharacter.Designer.cs">
+      <DependentUpon>ViewCharacter.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ViewClasses.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ViewClasses.Designer.cs">
+      <DependentUpon>ViewClasses.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ViewRaces.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ViewRaces.Designer.cs">
+      <DependentUpon>ViewRaces.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ViewSpells.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ViewSpells.Designer.cs">
+      <DependentUpon>ViewSpells.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ViewWeapons.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ViewWeapons.Designer.cs">
+      <DependentUpon>ViewWeapons.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="AddArmors.resx">
+      <DependentUpon>AddArmors.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AddCharacter.resx">
+      <DependentUpon>AddCharacter.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AddClasses.resx">
+      <DependentUpon>AddClasses.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AddRaces.resx">
+      <DependentUpon>AddRaces.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AddSpells.resx">
+      <DependentUpon>AddSpells.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AddWeapons.resx">
+      <DependentUpon>AddWeapons.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="EditArmors.resx">
+      <DependentUpon>EditArmors.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="EditCharacter.resx">
+      <DependentUpon>EditCharacter.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="EditClasses.resx">
+      <DependentUpon>EditClasses.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="EditRaces.resx">
+      <DependentUpon>EditRaces.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="EditSpells.resx">
+      <DependentUpon>EditSpells.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="EditWeapons.resx">
+      <DependentUpon>EditWeapons.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DiceRoll.resx">
+      <DependentUpon>DiceRoll.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Main.resx">
+      <DependentUpon>Main.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="ViewArmors.resx">
+      <DependentUpon>ViewArmors.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ViewCharacter.resx">
+      <DependentUpon>ViewCharacter.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ViewClasses.resx">
+      <DependentUpon>ViewClasses.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ViewRaces.resx">
+      <DependentUpon>ViewRaces.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ViewSpells.resx">
+      <DependentUpon>ViewSpells.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ViewWeapons.resx">
+      <DependentUpon>ViewWeapons.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="dndDataSet.xsc">
+      <DependentUpon>dndDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="dndDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>dndDataSet.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="dndDataSet.xss">
+      <DependentUpon>dndDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="dndSusDataSet.xsc">
+      <DependentUpon>dndSusDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="dndSusDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>dndSusDataSet.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="dndSusDataSet.xss">
+      <DependentUpon>dndSusDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
